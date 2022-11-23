@@ -13,11 +13,20 @@ class Complex
     void operator=(const Complex& other);
     Complex operator+(const Complex& other);
     Complex operator-(const Complex& other);
+    
+    // Պետք է վերադարձնի this-ը (Complex&)
     Complex operator++();
+    
     Complex operator++(int);
+    
+    // Պետք է վերադարձնի this-ը (Complex&)
     Complex operator--();
+    
     Complex operator--(int);
+    
+    // Պետք է վերադարձնի this-ը (Complex&)
     Complex operator+=(const Complex& other);
+    
     bool operator==(const Complex& other);
     void show();
 };
